@@ -1,0 +1,230 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+body{
+ display: grid;
+ grid-template-areas: "header header header"
+                      "home home home"
+                      "sobre sobre sobre"
+                      "fotos fotos fotos"
+                      "contato contato contato";
+grid-template-columns: repeat(3, 1fr);
+}
+
+.logo{
+width: 100px;
+}
+
+.header{
+    grid-area: header;
+    font-size: 2.5rem;
+}
+
+.header .header-container{
+    display: flex;
+    background-color: #b0cbf7;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:  50px;
+    padding-right: 50px;
+}
+
+.header .header-container .menu{
+  display: flex;
+ }
+
+.menu li{
+    margin-left: 50px;
+    font-weight: 800;
+}
+
+.menu li a:hover{
+    background-color: #718db9;
+    color: white;
+    padding: 10px;
+}
+
+/*POR QUE ADOTAR?*/
+.pq-adotar{
+    grid-area: home;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom:-3px;
+}
+
+.pq-adotar-texto{
+    padding: 50px;
+}
+
+.pq-adotar-texto h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #769ecd;
+    text-align: center;
+
+}
+.pq-adotar-texto p{
+    font-size: 2rem;
+    color: #769ecd;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.pq-adotar-texto .pq-adotar-texto-btn{
+margin-top: 20px;
+margin-left: 460px;
+background-color: #769ecd;
+border: none;
+padding: 10px;
+color: white;
+border-radius: 5px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
+}
+
+.pq-adotar-texto-btn:hover{
+    background-color: #b0cbf7;
+}
+
+
+/*QUEM SOMOS*/
+.quem-somos{
+    display: grid;
+    grid-area: sobre;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #718db9;
+        
+}
+
+.quem-somos-imagem{
+    display: grid;
+    
+}
+
+.quem-somos-texto{
+    padding: 50px;
+    color: white;
+  
+}
+
+.quem-somos-texto h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+
+.quem-somos-texto p{
+    font-size: 2rem;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+/*NOSSOS PETS*/
+
+.nossos-pets{
+    background-color: white;
+  
+}
+
+.nossos-pets h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    color:  #769ecd;
+ 
+}
+
+.nossos-pets a h1:hover{
+     color: #EF9C41;
+}
+
+.fotos-todos-pets{
+    display: grid;
+    grid-area: fotos;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    position: relative;  
+}
+
+
+.fotos-pets{
+    display: flex; 
+    flex-wrap: wrap;
+}
+ 
+
+.fotos-pets a img:hover{
+    opacity: 0.3;
+}
+
+.nome-pet{
+    position: absolute;
+}
+
+.nome-pet-btn{
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+     
+    position: absolute;
+    left: 20px;
+    bottom: -270px;
+    
+}
+
+.nome-pet-btn:hover{
+    background-color: #718db9;    
+}
+
+
+.nome-pet-btn a{
+    text-decoration: none;
+    color:  #718db9; 
+}
+
+.nome-pet-btn a:hover{
+    color: white;
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+    display: grid;
+    grid-area: contato;
+    grid-template-columns: 1fr;
+    background-color: #EF9C41;
+    font-size: 2rem;
+    text-align: center;
+    height: 180px;
+   align-items: center;
+  
+}
+
+h2{
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.redes{
+    font-size: 30px;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color:brown
+}
